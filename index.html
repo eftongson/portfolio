@@ -13,8 +13,6 @@
   <!-- Fonts via Google Fonts -->
   <!-- <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,100i,300,400,500,700,900%7cRoboto:100,300,400,500,700" rel="stylesheet"> -->
   <link href="https://fonts.googleapis.com/css?family=Overpass+Mono:700%7cOverpass:300,400" rel="stylesheet">
-  <!--link to p5.js-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.js"></script>
 
   <!-- For icons via Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -23,26 +21,30 @@
 
 <body>
   <section class="wrapper">
-    <!-- Part 1, Introduction -->
-    <section class="intro">
+
+    <header>
       <a href="index.html">
         <h1>Emilia Tongson</h1>
       </a>
+    </header>
+    <!-- Part 1, Introduction -->
+    <!-- <section id="intro">
+      <div>
       <p>Hello! I'm Emilia, an undergraduate student at
         the University of California in my senior year. I'm a Design major with
         emphases in Visual Communications and Interactive Media.
-        <!-- </p><p>
-        This website is a work in progress! Thank you for your patience as I continue to work on it for the rest of Winter Quarter 2018. -->
       </p>
+</div> -->
+    <!--vertical navigation-->
+    <nav>
+      <ul>
+    <li class="verticaltext" id="about"><a href="">ABOUT</a><br>
+  </li><li class="verticaltext" id="contact"><a href="">CONTACT</a><br>
+</li>  <!-- <h2 class="verticaltext" id="work"><a href="#projects">WORK</a></h2> -->
+</ul>
+    </nav>
 
-      <!--vertical navigation-->
-      <nav>
-        <h2 class="verticaltext" id="about"><a href="">ABOUT</a></h2><br>
-        <h2 class="verticaltext" id="contact"><a href="">CONTACT</a></h2><br>
-        <h2 class="verticaltext" id="work"><a href="#projects">WORK</a></h2>
-      </nav>
 
-    </section>
 
     <!-- Part 2, Projects -->
     <section class="projects" id="projects">
@@ -53,7 +55,7 @@
       </a>
       <a href="">
         <div class="projectBox zoom" id="specWork">
-          <h2>Work Summer 20218</h2>
+          <h2>Work Summer 2018</h2>
         </div>
       </a>
       <a href="">
@@ -69,10 +71,9 @@
 
     </section>
 
+
     <!-- Part 3, Other Platforms -->
-    <section class="footer moreprojects">
-      <!-- <p>This is where IG, Behance, and Github icons should go</p> -->
-      <!-- <p class="footerTxt">extra extra</p> -->
+    <!-- <section class="footer moreprojects">
       <div class="footerIcons">
         <br>
         <div class="iconWithCaption">
@@ -84,11 +85,10 @@
           <a href="https://eftongson.github.io/des157-g/"><i class="fa fa-github fa-lg" aria-hidden="true"></i><br>development</a>
 
         </div>
-        <!-- </span> -->
-        <!-- </p> -->
       </div>
+    </section> -->
     </section>
-  </section>
+
 
   <!--alert script-->
   <script src="script.js"></script>
