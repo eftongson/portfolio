@@ -7,38 +7,38 @@ html {
 }
 
 body {
-  /* background-color: antiquewhite; */
+  /* soft gradient
+  background: linear-gradient(#ffaaaa, #bbffee); */
+  background: linear-gradient(#040404, #F24E02);
   text-align: center;
   color: navy;
   display: block;
   font-family: 'Overpass', monospace;
   font-weight: 300;
-  margin-top: 0;
+  margin: 0;
+  padding: 2%;
+  width: 100vw;
+  height:100vh;
 }
 
-div #gradient{
-  position:absolute;
-  top:0;
-  left:0;
+section.wrapper{
+  background-color: #FFF3ED;
   width: 100%;
-  height: 100%;
-  background: linear-gradient(#000000,#ffaa00);
-  z-index: 4;
-}
-
-section .wrapper{
-  width: 50%;
-  height: 50%;
-  margin: auto;
+  height:100%;
+  margin:0;
+  padding-bottom: 0;
+  display: flex;
+  align-self: center;
+  justify-content:center;
 }
 
 /* LINK STYLING FOR H1 */
 a, h1 :before {
-  color: lightgrey;
+  color: black;
 }
 
 a, h1 :visited {
-  color: darkgrey;
+  color: black;
 }
 
 a h1:hover {
@@ -71,24 +71,18 @@ nav li .verticaltext{
 
 li{
     list-style-type: none;
+    font-size: 1rem;
 }
 h2 {
   padding-right: 90%;
 }
 
 h1 {
-  position: fixed;
-  /* top: 0;
-  padding-right: 0px;
-  padding-left: 0px; */
-  /* display: inline-block; */
-  font-family: 'Overpass Mono', sans-serif;
-  font-weight: 700;
+  position: absolute;
+  font-family: 'Overpass', sans-serif;
+  font-weight: 300;
   font-size: 1rem;
   color: grey;
-  /* grid-area: top1; */
-  /* display: flex; */
-  /* text-align: left; */
   z-index: 5;
   overflow: auto;
   mix-blend-mode: difference;
@@ -128,13 +122,14 @@ header{
 } */
 /* PROJECTS */
 section .projects{
+  width: 94%;
   position: absolute;
   top: 20%;
 
 }
 
 .projects {
-  background-color: white;
+  /* background-color: white; */
   /* min-height: 60vh;
   min-width: 100vw; */
   display: flex;
@@ -151,8 +146,8 @@ section .projects{
   text-align: center;
   overflow: visible;
   vertical-align: middle;
-  height: 25vh;
-  width: 25vh;
+  height: 22vh;
+  width: 22vh;
   display: block;
   padding: 2em;
 }
@@ -175,7 +170,7 @@ section .projects{
 }
 
 #des154final {
-  background-color: pink;
+  background: linear-gradient(#fffa00, #aa00ee);
 }
 
 #des157final {
@@ -207,7 +202,7 @@ section .projects{
 }
 
 /* MORE PROJECTS */
-.footer {
+/* .footer {
   position: fixed;
   bottom: 0;
   height: 10vh;
@@ -220,7 +215,6 @@ section .projects{
 
 .footerTxt {
   margin: 2em;
-  /*to avoid random slice of background peeping between sections*/
   color: darkgrey;
   font-size: .7em;
   text-align: center;
@@ -238,18 +232,70 @@ section .projects{
 .iconWithCaption {
   padding-left: 7px;
   padding-right: 7px;
-}
+} */
 
 /* FONT AWESOME ICONS */
-.fa {
+/* .fa {
   padding-right: 1.5em;
   padding-left: 1.5em;
   padding-bottom: .5em;
-}
+} */
 
-@media (max-width: 769px) {
-  nav {
+
+/* FOR DESKTOP */
+@media (min-width: 769px) {
+  body {
+    background: linear-gradient(#FFF3ED, #F24E02);
+    text-align: center;
+    color: navy;
+    display: block;
+    font-family: 'Overpass', monospace;
+    font-weight: 300;
+    margin: 0;
+    padding: 1%;
+    width: 100vw;
+    height:100vh;
+  }
+
+  section.wrapper{
+    background-color: #040404;
+    width: 100%;
+    height:100%;
+    margin:0;
+    display: flex;
+    align-self: center;
+    justify-content:center;
+  }
+
+  /* LINK STYLING FOR H1 */
+  a, h1 :before {
+    color: white;
+  }
+
+  a, h1 :visited {
+    color: white;
+  }
+
+  a h1:hover {
+    color: #FD5F00;
+  }
+
+  a:hover {
+    color: #FD5F00;
+  }
+
+  .projectBox {
+    text-align: center;
+    overflow: visible;
+    vertical-align: middle;
+    height: 20vw;
+    width: 20vw;
+    display: block;
+    padding: 2em;
+  }
+
+  /* nav {
     position: absolute;
     transform: rotate(-90deg);
-  }
+  } */
 }
