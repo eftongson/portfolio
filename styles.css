@@ -7,29 +7,28 @@ html {
 }
 
 body {
-  /* soft gradient
-  background: linear-gradient(#ffaaaa, #bbffee); */
-  background: linear-gradient(#040404, #F24E02);
+  background: linear-gradient(#2F302F, #EF4923);
   text-align: center;
   color: navy;
   display: block;
   font-family: 'Overpass', monospace;
   font-weight: 300;
   margin: 0;
+  /* padding for border */
   padding: 2%;
   width: 100vw;
-  height:100vh;
+  height: 100vh;
 }
 
-section.wrapper{
-  background-color: #FFF3ED;
+section.wrapper {
+  background: linear-gradient(#FFFFFF, #FFF3ED);
   width: 100%;
-  height:100%;
-  margin:0;
+  height: 100%;
+  margin: 0;
   padding-bottom: 0;
   display: flex;
   align-self: center;
-  justify-content:center;
+  justify-content: center;
 }
 
 /* LINK STYLING FOR H1 */
@@ -49,83 +48,81 @@ a:hover {
   color: #FD5F00;
 }
 
+/* no underlines! */
+a {
+  text-decoration: none;
+}
+
 /* VERTICAL NAVIGATION */
-nav li .verticaltext{
-  position: absolute;
-  width: 50%;
+.verticaltext {
+  position: fixed;
+  bottom: 5%;
+  /* width: 50%; */
   color: lightgrey;
-  margin: auto;
+  /* margin: auto; */
   font-family: 'Overpass Mono', monospace;
-  font-size: .7em;
-  font-weight: 300;
+  font-size: 1rem;
+  font-weight: 600;
   /* flexbox for vertical styling purposes */
-  display: flex;
+  /* display: flex;
   transform: rotate(90deg);
-  flex-direction: row;
+  flex-direction:row;
   left: 70%;
   top: 45%;
-  justify-content: flex-start;
+  justify-content: space-between; */
   z-index: 3;
-
 }
 
-li{
-    list-style-type: none;
-    font-size: 1rem;
+li {
+  list-style-type: none;
+  font-size: 1rem;
 }
+
+nav {
+  position: fixed;
+  bottom: 0;
+  margin: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul li.about {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+/* nav ul li.contact {
+  position: fixed;
+  right: 0;
+} */
 h2 {
   padding-right: 90%;
 }
 
 h1 {
-  position: absolute;
-  font-family: 'Overpass', sans-serif;
-  font-weight: 300;
-  font-size: 1rem;
-  color: grey;
+  position: relative;
+  left: 0;
+  top: 0;
+  /* text-align: center; */
+  font-family: 'Overpass Mono', monospace;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #000000;
   z-index: 5;
   overflow: auto;
-  mix-blend-mode: difference;
+  text-decoration: none;
+  /* mix-blend-mode: difference; */
 }
 
-header{
+header {
   margin: 10%;
 }
-/* INTRO */
-/* .intro {
 
-
-  max-width: 100%;
-  margin: 10vw;
-
-  padding-top: 3em;
-  align-items: center;
-  justify-content: center;
-  font-weight: 300;
-  overflow: visible;
-  display:none;
-} */
-/* .intro p {
-  width: 68vw;
-  word-wrap: normal;
-  position: relative;
-  top: 30vh;
-  padding-bottom: 0;
-  margin-bottom: 0;
-  text-align: left;
-  font-size: 4vh;
-  color: grey;
-  font-family: 'Overpass', sans-serif;
-  font-weight: 300;
-  z-index: 2;
-  display:none;
-} */
 /* PROJECTS */
-section .projects{
+section .projects {
   width: 94%;
   position: absolute;
   top: 20%;
-
 }
 
 .projects {
@@ -170,15 +167,16 @@ section .projects{
 }
 
 #des154final {
-  background: linear-gradient(#fffa00, #aa00ee);
+  /* background: linear-gradient(#fffa00, #aa00ee); */
+  background-color: grey;
 }
 
 #des157final {
-  background-color: lavender;
+  background-color: darkgrey;
 }
 
 #specWork {
-  background-color: orange;
+  background-color: grey;
 }
 
 /* ZOOM ON HOVER */
@@ -233,40 +231,51 @@ section .projects{
   padding-left: 7px;
   padding-right: 7px;
 } */
-
 /* FONT AWESOME ICONS */
 /* .fa {
   padding-right: 1.5em;
   padding-left: 1.5em;
   padding-bottom: .5em;
 } */
-
-
 /* FOR DESKTOP */
 @media (min-width: 769px) {
   body {
-    background: linear-gradient(#FFF3ED, #F24E02);
+    background: linear-gradient(#2F302F, #EF4923);
     text-align: center;
     color: navy;
     display: block;
-    font-family: 'Overpass', monospace;
+    font-family: 'Overpass', sans-serif;
     font-weight: 300;
     margin: 0;
     padding: 1%;
     width: 100vw;
-    height:100vh;
+    height: 100vh;
   }
 
-  section.wrapper{
-    background-color: #040404;
+  section.wrapper {
+    background: linear-gradient(#000000, #2F302F);
     width: 100%;
-    height:100%;
-    margin:0;
+    height: 100%;
+    margin: 0;
     display: flex;
     align-self: center;
-    justify-content:center;
+    justify-content: center;
   }
 
+  h1 {
+    font-size: 2rem;
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 5%;
+  }
+
+nav ul{
+ font-family: 'Overpass Mono', monospace;
+ font-weight: 400;
+ display: inline;
+}
   /* LINK STYLING FOR H1 */
   a, h1 :before {
     color: white;
@@ -291,7 +300,11 @@ section .projects{
     height: 20vw;
     width: 20vw;
     display: block;
-    padding: 2em;
+    padding: 3em;
+  }
+
+  .projectBox:first-child {
+    text-align: center;
   }
 
   /* nav {
