@@ -11,10 +11,13 @@
   <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel="stylesheet" />
 
   <!-- Fonts via Google Fonts -->
-  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,100i,300,400,500,700,900%7cRoboto:100,300,400,500,700" rel="stylesheet"> -->
   <link href="https://fonts.googleapis.com/css?family=Overpass+Mono:300,400,600,700%7cOverpass:300,400" rel="stylesheet">
-  <!-- <link href="https://fonts.googleapis.com/css?family=Overpass+Mono:700" rel="stylesheet"> -->
-  <link href="styles.css" rel="stylesheet" />
+
+  <!-- styles -->
+  <link href="styles.css" rel="stylesheet"/>
+
+  <!-- css animations js -->
+  <link href="wickedcss.min.css" rel="stylesheet">
 
 
   <!-- For icons via Font Awesome -->
@@ -27,7 +30,7 @@
 
     <header>
       <a href="index.html">
-        <h1>Emilia Tongson</h1>
+        <h1 class="slideUp">Emilia Tongson</h1>
       </a>
     </header>
     <!-- Part 1, Introduction -->
@@ -41,9 +44,9 @@
     <!--vertical navigation-->
     <nav>
       <ul>
-        <li class="verticaltext" id="about"><a href="">about</a><br>
+        <li class="verticaltext slideDown" id="about"><a href="">about</a><br>
         </li>
-        <li class="verticaltext" id="contact"><a href="">contact</a><br>
+        <li class="verticaltext slideDown" id="contact"><a href="">contact</a><br>
         </li> <!-- <h2 class="verticaltext" id="work"><a href="#projects">WORK</a></h2> -->
       </ul>
     </nav>
@@ -51,7 +54,7 @@
 
 
     <!-- Part 2, Projects -->
-    <section class="projects" id="projects">
+    <section class="projects fadeIn slideUp" id="projects">
       <a href="">
         <div class="projectBox zoom" id="des116final">
           <h2>Deedaise</h2>
