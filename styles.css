@@ -62,10 +62,10 @@ nav {
   font-family: 'Overpass Mono', monospace;
   font-size: 1rem;
   font-weight: 600;
-  z-index: 3;
+  z-index: 5;
 }
 
-ul{
+ul {
   padding-left: 15%;
   padding-right: 15%;
   padding-bottom: 0;
@@ -77,23 +77,7 @@ li {
   list-style-type: none;
   font-size: 1rem;
   text-align: justify;
-  /* display: inline; */
-  /* justify-content: space-between; */
 }
-/*
-nav {
-  position: fixed;
-  bottom: 0;
-  margin: 5%;
-  display: flex;
-  justify-content: space-between;
-}
-
-nav ul li.about {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-} */
 
 h2 {
   padding-right: 90%;
@@ -111,11 +95,33 @@ h1 {
   z-index: 5;
   overflow: auto;
   text-decoration: none;
-  /* mix-blend-mode: difference; */
 }
 
 header {
   margin: 10%;
+}
+
+/* ABOUT */
+section#about {
+  background-color: inherit;
+  z-index: 4;
+  position: fixed;
+  background: linear-gradient(#FFFFFF, #FFF3ED);
+  /* display: none; */
+}
+
+div.about {
+  width: 96vw;
+  height: 96vh;
+  color: darkgrey;
+  padding: 15%;
+  font-family: "Overpass", sans-serif;
+  font-weight: 100;
+}
+
+img#headshot {
+  margin: 5%;
+  margin-top: 15%;
 }
 
 /* PROJECTS */
@@ -126,9 +132,6 @@ section .projects {
 }
 
 .projects {
-  /* background-color: white; */
-  /* min-height: 60vh;
-  min-width: 100vw; */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -147,6 +150,7 @@ section .projects {
   width: 22vh;
   display: block;
   padding: 2em;
+  box-shadow: 0px 0px 150px darkgrey;
 }
 
 .projectBox h2 {
@@ -183,20 +187,20 @@ section .projects {
 .zoom:hover {
   transform: scale(1.05);
   z-index: 3;
-  box-shadow: 5px 5px 30px darkgrey;
+  /* box-shadow: 0px 9px 300px darkgrey; */
   transition: all 200ms ease-in;
 }
 
 /* ANOTHER HOVER FOR THE INNER SHADOW */
 .projectBox:hover {
-  box-shadow: inset 0px 0px 500px white;
+  /* box-shadow: inset 0px 0px 500px white; */
   transition: all 200ms ease-in;
 }
 
 .projectBox:hover h2 {
-  color: black;
+  color: #FD5F00;
   /* DESELECT H2 BECAUSE THE TEXT LINE FILLS WITH BOX SHADOW */
-  box-shadow: inset 0px 0px 0px white;
+  /* box-shadow: inset 0px 0px 0px white; */
 }
 
 /* MORE PROJECTS */
