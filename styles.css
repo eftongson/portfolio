@@ -7,28 +7,28 @@ html {
 }
 
 body {
-  background: linear-gradient(#2F302F, #EF4923);
-  text-align: center;
-  color: navy;
   display: block;
-  font-family: 'Overpass', monospace;
-  font-weight: 300;
-  margin: 0;
-  /* padding for border */
-  padding: 2%;
   width: 100vw;
   height: 100vh;
+  background: linear-gradient(#2F302F, #EF4923);
+  text-align: center;
+  font-weight: 300;
+  font-family: 'Overpass', monospace;
+  color: navy;
+  margin: 0;
+  padding: 2%;
+  /* 2% padding for border */
 }
 
 section.wrapper {
-  background: linear-gradient(#FFFFFF, #FFF3ED);
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding-bottom: 0;
   display: flex;
   align-self: center;
   justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#FFFFFF, #FFF3ED);
+  margin: 0;
+  padding-bottom: 0;
 }
 
 /* LINK STYLING FOR H1 */
@@ -48,46 +48,21 @@ a:hover {
   color: #FD5F00;
 }
 
-/* no underlines! */
 a {
   text-decoration: none;
 }
 
-/* VERTICAL NAVIGATION */
-nav {
-  width: 100%;
-  position: fixed;
-  bottom: 5%;
-  color: lightgrey;
-  font-family: 'Overpass Mono', monospace;
-  font-size: 1rem;
-  font-weight: 600;
-  z-index: 5;
-}
+header {
+  position: absolute;
+  padding-top: 10vmin;
+  margin: auto;
 
-ul {
-  padding-left: 15%;
-  padding-right: 15%;
-  padding-bottom: 0;
-  display: flex;
-  justify-content: space-between;
-}
-
-li {
-  list-style-type: none;
-  font-size: 1rem;
-  text-align: justify;
-}
-
-h2 {
-  padding-right: 90%;
 }
 
 h1 {
-  position: relative;
-  left: 0;
+  left: 50%;
   top: 0;
-  /* text-align: center; */
+  text-align: center;
   font-family: 'Overpass Mono', monospace;
   font-weight: 600;
   font-size: 1.2rem;
@@ -97,38 +72,43 @@ h1 {
   text-decoration: none;
 }
 
-header {
-  margin: 10%;
-}
-
-/* ABOUT */
-section#about {
-  background-color: inherit;
-  z-index: 4;
+/* VERTICAL NAVIGATION */
+nav {
   position: fixed;
-  background: linear-gradient(#FFFFFF, #FFF3ED);
-  /* display: none; */
+  width: 100%;
+  bottom: 5vmax;
+  color: lightgrey;
+  font-family: 'Overpass Mono', monospace;
+  font-size: 1rem;
+  font-weight: 600;
+  z-index: 5;
 }
 
-div.about {
-  width: 96vw;
-  height: 96vh;
-  color: darkgrey;
-  padding: 15%;
-  font-family: "Overpass", sans-serif;
-  font-weight: 100;
+ul {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-bottom: 0;
 }
 
-img#headshot {
-  margin: 5%;
-  margin-top: 15%;
+li {
+  list-style-type: none;
+  font-size: 1rem;
+  text-align: justify;
+}
+
+h2 {
+  /* padding-right: 90%; */
+  font-size: 1vmin;
 }
 
 /* PROJECTS */
-section .projects {
+section.projects {
   width: 94%;
-  position: absolute;
-  top: 20%;
+  display: flex;
+  align-items: center;
+  align-content: center;
 }
 
 .projects {
@@ -143,11 +123,13 @@ section .projects {
 }
 
 .projectBox {
+  display: flex;
+  align-content: center;
   text-align: center;
   overflow: visible;
-  vertical-align: middle;
-  height: 22vh;
-  width: 22vh;
+  /* vertical-align: middle; */
+  height: 22vmax;
+  width: 22vmax;
   display: block;
   padding: 2em;
   box-shadow: 0px 0px 150px darkgrey;
@@ -156,31 +138,35 @@ section .projects {
 .projectBox h2 {
   color: white;
   font-family: 'Roboto Mono', sans-serif;
-  font-size: .7em;
+  font-size: 3vmin;
   font-weight: 100;
   font-style: italic;
   margin: auto;
 }
 
-#des116final {
-  background-color: gold;
-  background-image: url('images/deedaise-cover.jpg');
+#deedaise {
+  /* background-color: gold; */
+  background-image: url('projects/deedaise/cover.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
 }
 
-#des154final {
+#missionpermission {
   /* background: linear-gradient(#fffa00, #aa00ee); */
-  background-color: grey;
+  /* background-color: grey; */
+  background-image: url('projects/missionpermission/cover.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
 }
 
-#des157final {
-  background-color: darkgrey;
-}
-
-#specWork {
-  background-color: grey;
+#inztangrat {
+  /* background-color: lightgrey; */
+  background-image: url('projects/inztangrat/cover.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
 }
 
 /* ZOOM ON HOVER */
@@ -203,44 +189,29 @@ section .projects {
   /* box-shadow: inset 0px 0px 0px white; */
 }
 
-/* MORE PROJECTS */
-/* .footer {
+/* ABOUT */
+section#about {
+  background-color: inherit;
+  z-index: 4;
   position: fixed;
-  bottom: 0;
-  height: 10vh;
-  min-width: 100vw;
-  background-color: white;
-  margin-bottom: 1.5em;
-  padding-top: 1.5em;
-  padding-bottom: 0px;
+  background: linear-gradient(#FFFFFF, #FFF3ED);
+  display: none;
 }
 
-.footerTxt {
-  margin: 2em;
+div.about {
+  width: 96vw;
+  height: 96vh;
   color: darkgrey;
-  font-size: .7em;
-  text-align: center;
+  padding: 15%;
+  font-family: "Overpass", sans-serif;
+  font-weight: 100;
 }
 
-.footerIcons {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding-top: 1em;
-  font-size: .7em;
+img#headshot {
+  margin: 5%;
+  margin-top: 15%;
 }
 
-.iconWithCaption {
-  padding-left: 7px;
-  padding-right: 7px;
-} */
-/* FONT AWESOME ICONS */
-/* .fa {
-  padding-right: 1.5em;
-  padding-left: 1.5em;
-  padding-bottom: .5em;
-} */
 /* FOR DESKTOP */
 @media (min-width: 769px) {
   body {
@@ -269,10 +240,10 @@ section .projects {
   h1 {
     font-size: 2rem;
     color: white;
-    position: absolute;
+    /* position: absolute;
     top: 0;
     right: 0;
-    margin: 5%;
+    margin: 5%; */
   }
 
   /* LINK STYLING FOR H1 */
@@ -306,6 +277,7 @@ section .projects {
     text-align: center;
   }
 
+  /* vertical */
   /* nav {
     position: absolute;
     transform: rotate(-90deg);
