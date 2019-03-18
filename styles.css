@@ -56,7 +56,6 @@ header {
   position: absolute;
   padding-top: 10vmin;
   margin: auto;
-
 }
 
 h1 {
@@ -82,6 +81,7 @@ nav {
   font-size: 1rem;
   font-weight: 600;
   z-index: 5;
+  /* mix-blend-mode: difference; */
 }
 
 ul {
@@ -105,17 +105,31 @@ h2 {
 
 /* PROJECTS */
 section.projects {
+  height: 70%;
   width: 94%;
   display: flex;
   align-items: center;
   align-content: center;
+  display: flex;
+  overflow: scroll;
+  /* height: 94%; */
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  transform: skew(-5deg, 5deg);
+  /* change this for desktop */
+  margin-top: 25%;
+  margin-bottom: 15%;
+  z-index: 4;
+  /* animation: scroll 10s linear 1s infinite; */
 }
 
-.projects {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  /* margin-top: 15%; */
+/* @keyframes scroll {
+    95% { top: -100%; }
+    100% { top:0; }
+} */
+section.projects {
+  padding-top: 18%;
 }
 
 .projects a:link {
@@ -127,21 +141,25 @@ section.projects {
   align-content: center;
   text-align: center;
   overflow: visible;
-  /* vertical-align: middle; */
-  height: 22vmax;
-  width: 22vmax;
+  margin: 1vmax;
+  height: 50vmin;
+  width: 50vmin;
   display: block;
-  padding: 2em;
-  box-shadow: 0px 0px 150px darkgrey;
+  /* padding: 2em; */
+  box-shadow: 0px 0px 20vw rgba(0, 0, 0, 0.3);
+  ;
 }
 
 .projectBox h2 {
+  transform: skew(5deg, -5deg);
   color: white;
   font-family: 'Roboto Mono', sans-serif;
   font-size: 3vmin;
   font-weight: 100;
   font-style: italic;
   margin: auto;
+  padding-top: 25%;
+  z-index: 2;
 }
 
 #deedaise {
@@ -169,24 +187,29 @@ section.projects {
   background-position: bottom;
 }
 
+.projectBox:hover h2 {
+  font-size: 3vmax;
+  color: #FD5F00;
+  transition: font-size .4s;
+  /* DESELECT H2 BECAUSE THE TEXT LINE FILLS WITH BOX SHADOW */
+  /* box-shadow: inset 0px 0px 0px white; */
+}
+
 /* ZOOM ON HOVER */
 .zoom:hover {
-  transform: scale(1.05);
+  transform: scale(1.6);
   z-index: 3;
   /* box-shadow: 0px 9px 300px darkgrey; */
-  transition: all 200ms ease-in;
+  transition: transform .5s;
 }
 
 /* ANOTHER HOVER FOR THE INNER SHADOW */
 .projectBox:hover {
   /* box-shadow: inset 0px 0px 500px white; */
-  transition: all 200ms ease-in;
-}
-
-.projectBox:hover h2 {
-  color: #FD5F00;
-  /* DESELECT H2 BECAUSE THE TEXT LINE FILLS WITH BOX SHADOW */
-  /* box-shadow: inset 0px 0px 0px white; */
+  /* transition: all 2s ease-in; */
+  background: antiquewhite;
+  transform: scale(1.15);
+  transition: transform .5s ease-out, background .5s;
 }
 
 /* ABOUT */
@@ -210,6 +233,10 @@ div.about {
 img#headshot {
   margin: 5%;
   margin-top: 15%;
+}
+
+section#inspo {
+  display: none;
 }
 
 /* FOR DESKTOP */
@@ -263,20 +290,45 @@ img#headshot {
     color: #FD5F00;
   }
 
+  section.projects {
+    display: flex;
+    overflow: visible;
+    flex-direction: row;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+    transform: skew(0deg, 0deg);
+  }
+
+  /* .projects {
+    transform: skew(0deg, -5deg);
+  } */
   .projectBox {
     text-align: center;
     overflow: visible;
     vertical-align: middle;
-    height: 20vw;
-    width: 20vw;
+    height: 17vmax;
+    width: 17vmax;
     display: block;
     padding: 3em;
   }
 
-  .projectBox:first-child {
-    text-align: center;
+  .projectBox h2 {
+    color: white;
+    font-family: 'Roboto Mono', sans-serif;
+    font-size: 3vmin;
+    font-weight: 100;
+    font-style: italic;
+    margin: auto;
+    padding-top: 25%;
+    z-index: 2;
+    transform: skew(0deg, 0deg);
   }
 
+  /* .projectBox:first-child {
+    text-align: center;
+  } */
   /* vertical */
   /* nav {
     position: absolute;
