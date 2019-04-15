@@ -29,6 +29,7 @@ section.wrapper {
   background: linear-gradient(#FFFFFF, #FFF3ED);
   margin: 0;
   padding-bottom: 0;
+  overflow-x: scroll;
 }
 
 /* LINK STYLING FOR H1 */
@@ -53,9 +54,13 @@ a {
 }
 
 header {
-  position: absolute;
-  padding: 10vmin;
+  position: fixed;
+  /* padding: 10vmin; */
   margin: auto;
+  /* outline: 1px solid blue; */
+  height: 12.5%;
+  line-height: 10vh;
+
 }
 
 h1 {
@@ -75,13 +80,16 @@ h1 {
 nav {
   position: fixed;
   width: 100%;
-  bottom: 15vmin;
+  bottom: 0;
   color: lightgrey;
   font-family: 'Overpass Mono', monospace;
   font-size: 1rem;
   font-weight: 600;
   z-index: 5;
   mix-blend-mode: multiply;
+  /* outline: 1px solid green; */
+  line-height: 10vh;
+
 }
 
 ul {
@@ -104,9 +112,9 @@ h2 {
 
 /* PROJECTS */
 section.projects {
+
   height: 75%;
   width: 100%;
-  top: 30vmin;
   display: flex;
   margin: auto;
   align-items: center;
@@ -115,8 +123,8 @@ section.projects {
   overflow: scroll;
   flex-direction: column;
   /* justify-content: center; */
-  margin-top: 24vmin;
-  margin-bottom: 15%;
+  /* margin-top: 24vmin; */
+  padding-bottom: 24vmin;
   z-index: 4;
 }
 
@@ -137,7 +145,7 @@ section.projects {
   align-content: center;
   text-align: center;
   overflow: visible;
-  margin: 1vmax;
+  margin: 6vmin;
   height: 75vmin;
   width: 75vmin;
   display: block;
