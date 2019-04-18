@@ -60,6 +60,7 @@ header {
   /* outline: 1px solid blue; */
   height: 12.5%;
   line-height: 10vh;
+  z-index: 6;
 
 }
 
@@ -71,7 +72,7 @@ h1 {
   font-weight: 600;
   font-size: 1.2rem;
   color: #000000;
-  z-index: 5;
+  z-index: 6;
   overflow: auto;
   text-decoration: none;
 }
@@ -280,6 +281,7 @@ section#inspo {
   header {
     position: absolute;
     top: 10vmin;
+    overflow:visible;
   }
 
   /* LINK STYLING FOR H1 */
