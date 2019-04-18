@@ -192,7 +192,7 @@ section.projects {
 }
 
 .projectBox:hover h2 {
-  font-size: 3vmax;
+  font-size: 2vmax;
   color: #FD5F00;
   transition: font-size .4s;
   /* DESELECT H2 BECAUSE THE TEXT LINE FILLS WITH BOX SHADOW */
@@ -201,7 +201,7 @@ section.projects {
 
 /* ZOOM ON HOVER */
 .zoom:hover {
-  transform: scale(1.6);
+  transform: scale(1.4);
   z-index: 3;
   /* box-shadow: 0px 9px 300px darkgrey; */
   transition: transform .5s;
@@ -269,12 +269,17 @@ section#inspo {
   }
 
   h1 {
-    font-size: 2rem;
+    font-size: 2vmax;
     color: white;
     /* position: absolute;
     top: 0;
     right: 0;
     margin: 5%; */
+  }
+
+  header {
+    position: absolute;
+    top: 10vmin;
   }
 
   /* LINK STYLING FOR H1 */
@@ -299,9 +304,10 @@ section#inspo {
     overflow: visible;
     flex-direction: row;
     position: relative;
-    margin: 0;
+    margin: auto;
     padding: 0;
     vertical-align: middle;
+    justify-content: center;
     /* transform: skew(0deg, 0deg); */
   }
 
