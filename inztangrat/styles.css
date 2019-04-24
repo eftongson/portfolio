@@ -1,0 +1,115 @@
+body {
+  border-color: grey;
+  border-radius: 1vmin;
+  background-color: white;
+  font-family: sans-serif;
+}
+
+header {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  width: 375px;
+  margin: auto;
+  padding-top: 1.9vmax;
+  padding-bottom: 1.9vmax;
+  color: black;
+  /* border-style: solid;
+  border-color: black;
+  border-width: 1px; */
+  text-align: center;
+  box-shadow: 0px 0px 30px grey;
+  background-blend-mode: multiply;
+  z-index: 3;
+}
+
+h1 {
+  font-size: 1rem;
+  text-align: center;
+  margin: auto;
+}
+
+section#container {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(#0000ff, #ff0000);
+  /* margin: auto; */
+}
+
+h2 {
+  font-size: 1rem;
+  padding-left: 1.5vmax;
+}
+
+p {
+  font-size: 2vmax;
+  padding-left: 1.5vmax;
+}
+
+section#feed {
+  position: relative;
+  background-color: blue;
+  z-index: 0;
+  width: 100vw;
+  height: 100vh;
+  color: green;
+}
+
+section#feedOverlay {
+  z-index: 2;
+  color: black;
+}
+
+.feedPost {
+  position: relative;
+  top: 900px;
+  padding-top: 4vmax;
+  z-index: 1;
+  color: #00ff00;
+}
+
+div.post {
+  /* border-style: solid;
+  border-color:black;
+  border-width: 1px; */
+  width: 375px;
+  height: 375px;
+  /* background-color: lightgrey; */
+}
+
+nav {
+  background-color: white;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  width: 375px;
+  margin: auto;
+  padding-top: 1.7vmax;
+  padding-bottom: 1.7vmax;
+  color: #0000ff;
+  /* border-style: solid;
+  border-color: black;
+  border-width: 1px; */
+  box-shadow: 0px 0px 30px grey;
+  z-index: 3;
+}
+
+div.navIcon {
+  margin: auto;
+  justify-content: space-around;
+  border-color: grey;
+  cursor: pointer;
+}
+
+footer {
+  position: fixed;
+  bottom: 50px;
+  background-color: white;
+  opacity: .5;
+  color: black;
+  z-index: 4;
+  width: 100%;
+}

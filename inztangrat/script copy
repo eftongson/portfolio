@@ -1,0 +1,9 @@
+'use strict';
+
+console.log('feed me');
+
+var postXY = 300,300;
+
+function setup( {
+var myCanvas = createCanvas (postXY, postXY);
+})
