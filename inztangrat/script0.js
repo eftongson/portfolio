@@ -95,13 +95,13 @@ var imageDimensions;
 var yousernameHeight;
 
 // use of responsive variables for dimensions?
-var intViewportHeight = window.innerHeight;
-console.log('intViewportHeight: ' + intViewportHeight);
-// listens for different responsive dimensions
-window.addEventListener('resize', function() {
-  intViewportHeight = window.innerHeight;
-  console.log('intViewportHeight: ' + intViewportHeight);
-})
+// var intViewportHeight = window.innerHeight;
+// console.log('intViewportHeight: ' + intViewportHeight);
+// // listens for different responsive dimensions
+// window.addEventListener('resize', function() {
+//   intViewportHeight = window.innerHeight;
+//   console.log('intViewportHeight: ' + intViewportHeight);
+// })
 
 //while our audio is playing,
 //this will be set to true
