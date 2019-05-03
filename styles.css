@@ -247,7 +247,7 @@ section#inspo {
 /* FOR DESKTOP */
 @media (min-width: 769px) {
   body {
-    background: linear-gradient(#2F302F, #EF4923);
+    /* background: linear-gradient(#2F302F, #EF4923); */
     text-align: center;
     color: navy;
     display: block;
@@ -260,7 +260,7 @@ section#inspo {
   }
 
   section.wrapper {
-    background: linear-gradient(#000000, #2F302F);
+    /* background: linear-gradient(#000000, #2F302F); */
     width: 100%;
     height: 100%;
     margin: 0;
@@ -271,7 +271,7 @@ section#inspo {
 
   h1 {
     font-size: 2vmax;
-    color: white;
+    color: black;
     /* position: absolute;
     top: 0;
     right: 0;
@@ -286,11 +286,11 @@ section#inspo {
 
   /* LINK STYLING FOR H1 */
   a, h1 :before {
-    color: white;
+    color: black;
   }
 
   a, h1 :visited {
-    color: white;
+    color: black;
   }
 
   a h1:hover {
@@ -307,7 +307,7 @@ section#inspo {
     flex-direction: row;
     position: relative;
     margin: auto;
-    padding: 0;
+    padding: 100px;
     vertical-align: middle;
     justify-content: center;
     /* transform: skew(0deg, 0deg); */
@@ -338,6 +338,20 @@ section#inspo {
     /* transform: skew(0deg, 0deg); */
   }
 
+  nav {
+    position: fixed;
+    width: 100%;
+    bottom: 10vmin;
+    color: lightgrey;
+    font-family: 'Overpass Mono', monospace;
+    font-size: 1rem;
+    font-weight: 600;
+    z-index: 5;
+    mix-blend-mode: multiply;
+    /* outline: 1px solid green; */
+    line-height: 10vh;
+
+  }
   /* .projectBox:first-child {
     text-align: center;
   } */
