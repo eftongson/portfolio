@@ -84,7 +84,7 @@ function mouseMoved() {
 
 function draw() {
 
-  /*
+  
   image(capture1, 0, 4800 + yousernameHeight, 640, 480);
   filter('DILATE');
 
@@ -102,7 +102,7 @@ function draw() {
 
   image(capture1, 0, 800 + yousernameHeight, 640, 480);
   filter('DILATE');
-  */
+
 
   image(capture1, 0, 0 + yousernameHeight, 640, 480);
   filter('ERODE');
