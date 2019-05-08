@@ -8,7 +8,7 @@ var feed;
 
 var capture1;
 var capture2;
-var imageDimensions;
+// var imageDimensions;
 var yousernameHeight;
 
 //while our audio is playing,
@@ -17,20 +17,20 @@ var yousernameHeight;
 var canvasIsDrawing = false;
 
 function setup() {
-  imageDimensions = 375;
+  // imageDimensions = 375;
   yousernameHeight = 36;
 
   frameRate(2);
 
-    feed = createCanvas(imageDimensions, window.innerHeight * 8);
+    feed = createCanvas(window.innerWidth, window.innerHeight * 8);
     background(0,0,0,0);
 
 
-    var feed = createCanvas(imageDimensions, window.innerHeight * 8);
+    var feed = createCanvas(window.innerWidth, window.innerHeight * 8);
     // create video capture
     capture1 = createCapture(VIDEO);
     // video capture size
-    capture1.size(imageDimensions, imageDimensions);
+    capture1.size(window.innerWidth, window.innerWidth);
     capture1.hide(); // remove comment to hide video
     // parent it to section id in html
     feed.parent('feed');
@@ -60,7 +60,6 @@ function draw() {
 
   image(capture1, 0, 800 + yousernameHeight, 640, 480);
   filter('DILATE');
-
 
   image(capture1, 0, 0 + yousernameHeight, 640, 480);
   filter('ERODE');

@@ -16,8 +16,8 @@ body {
   font-family: 'Overpass', monospace;
   color: navy;
   margin: 0;
-  padding: 2%;
-  /* 2% padding for border */
+  padding: 1%;
+  /* 1% padding for border */
 }
 
 section.wrapper {
@@ -108,7 +108,7 @@ li {
 }
 
 h2 {
-  font-size: 1vmin;
+  font-size: 5vmin;
 }
 
 /* PROJECTS */
@@ -202,7 +202,7 @@ section.projects {
 
 /* ZOOM ON HOVER */
 .zoom:hover {
-  transform: scale(1.4);
+  transform: scale(1.05);
   z-index: 3;
   /* box-shadow: 0px 9px 300px darkgrey; */
   transition: transform .5s;
@@ -213,7 +213,7 @@ section.projects {
   /* box-shadow: inset 0px 0px 500px white; */
   /* transition: all 2s ease-in; */
   background: antiquewhite;
-  transform: scale(1.15);
+  transform: scale(1.05);
   transition: transform .5s ease-out, background .5s;
 }
 
@@ -254,7 +254,7 @@ section#inspo {
     font-family: 'Overpass', sans-serif;
     font-weight: 300;
     margin: 0;
-    padding: 1%;
+    padding: .5%;
     width: 100vw;
     height: 100vh;
   }
@@ -272,10 +272,10 @@ section#inspo {
   h1 {
     font-size: 2vmax;
     color: black;
-    /* position: absolute;
-    top: 0;
-    right: 0;
-    margin: 5%; */
+  }
+
+  h2 {
+    font-size: 1vmax;
   }
 
   header {
@@ -352,12 +352,4 @@ section#inspo {
     line-height: 10vh;
 
   }
-  /* .projectBox:first-child {
-    text-align: center;
-  } */
-  /* vertical */
-  /* nav {
-    position: absolute;
-    transform: rotate(-90deg);
-  } */
 }
