@@ -16,6 +16,7 @@ var yousernameHeight;
 // var sampleIsPlaying = false;
 var canvasIsDrawing = false;
 
+
 function setup() {
   // imageDimensions = 375;
   yousernameHeight = 36;
@@ -38,8 +39,25 @@ function setup() {
 
 }
 
+//when you click the heart, it should change blending modes.
+var myHeart;
+myHeart = document.getElementById("myHeart");
+
+function mouseDown(){
+myHeart.style.mixBlendMode = "exclusion";
+ myHeart.style.opacity = "1";
+ console.log('wow my heart works');
+}
+
+function mouseUp(){
+myHeart.style.mixBlendMode = "normal";
+ myHeart.style.opacity = ".1";
+ console.log('wow my heart works');
+}
 
 
+
+//this function draws the feed, from the last to the first post.
 function draw() {
 
 
@@ -63,6 +81,7 @@ function draw() {
 
   image(capture1, 0, 0 + yousernameHeight, 640, 480);
   filter('ERODE');
+
 
 
 }

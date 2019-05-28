@@ -102,23 +102,14 @@ footer {
   width: 100%;
 }
 
-#heart {
+#myHeart {
   width: 50vw;
   position: fixed;
   top: 30vh;
   z-index: 5;
-  mix-blend-mode: exclusion;
+  mix-blend-mode: normal;
   margin: 0;
   padding-left: 25vw;
   padding-right: 25vw;
+  opacity: .1;
 }
-/* div#negativedesktopspace{
-  background-color: black;
-  position: absolute;
-  z-index: 7;
-  top: 0;
-  left: 375px;
-  height: 1000%;
-  width: 100%;
-  overflow:hidden;
-} */
