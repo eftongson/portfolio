@@ -29,7 +29,7 @@ section.wrapper {
   background: linear-gradient(#FFFFFF, #FFF3ED);
   margin: 0;
   padding-bottom: 0;
-  overflow-x: scroll;
+  overflow-x:hidden;
 }
 
 /* LINK STYLING FOR H1 */
