@@ -61,27 +61,27 @@ myHeart.style.mixBlendMode = "normal";
 function draw() {
 
 
-  image(capture1, 0, 4800 + yousernameHeight, 640, 480);
+  image(capture1, 0, 4800 + yousernameHeight, 480, 480);
   filter('DILATE');
 
-  image(capture1, 0, 4000 + yousernameHeight, 640, 480);
+  image(capture1, 0, 4000 + yousernameHeight, 480, 480);
   filter('DILATE');
 
-  image(capture1, 0, 3200 + yousernameHeight, 640, 480);
+  image(capture1, 0, 3200 + yousernameHeight, 480, 480);
   filter('DILATE');
 
-  image(capture1, 0, 2400 + yousernameHeight, 640, 480);
+  image(capture1, 0, 2400 + yousernameHeight, 480, 480);
   filter('DILATE');
 
-  image(capture1, 0, 1600 + yousernameHeight, 640, 480);
+  image(capture1, 0, 1600 + yousernameHeight, 480, 480);
   filter('DILATE'); // change filters: THRESHOLD, GRAY, OPAQUE, INVERT, POSTERIZE, BLUR, ERODE, DILATE or BLUR.
 
-  image(capture1, 0, 800 + yousernameHeight, 640, 480);
+  image(capture1, 0, 800 + yousernameHeight, 480, 480);
   filter('DILATE');
 
-  image(capture1, 0, 0 + yousernameHeight, 640, 480);
+  image(capture1, 0, 0 + yousernameHeight, 480, 480);
   filter('ERODE');
 
 
-
+// 640,480 for original, not stretched image dimensions
 }
