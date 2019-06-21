@@ -14,7 +14,7 @@ body {
   text-align: center;
   font-weight: 300;
   font-family: 'Overpass', monospace;
-  /* color: navy; */
+  color: black;
   margin: 0;
   padding: 1%;
   /* 1% padding for border */
@@ -61,12 +61,13 @@ header {
   height: 12.5%;
   line-height: 10vh;
   z-index: 6;
+  top: 5vh;
 
 }
 
 h1 {
   left: 50%;
-  top: 0;
+  top: 12vh;
   text-align: center;
   font-family: 'Overpass Mono', monospace;
   font-weight: 600;
@@ -81,7 +82,7 @@ h1 {
 nav {
   position: fixed;
   width: 100%;
-  bottom: 0;
+  top: 15vh;
   color: lightgrey;
   font-family: 'Overpass Mono', monospace;
   font-size: 1rem;
@@ -113,14 +114,6 @@ h2 {
 
 
 /* ABOUT */
-/* section#about {
-  background-color: inherit;
-  z-index: 4;
-  position: fixed;
-  background: linear-gradient(#FFFFFF, #FFF3ED);
-  display: block;
-} */
-
 section.about {
   width: 96vw;
   height: 96vh;

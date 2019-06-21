@@ -14,7 +14,7 @@ body {
   text-align: center;
   font-weight: 300;
   font-family: 'Overpass', monospace;
-  color: navy;
+  color: black;
   margin: 0;
   padding: 1%;
   /* 1% padding for border */
@@ -61,12 +61,13 @@ header {
   height: 12.5%;
   line-height: 10vh;
   z-index: 6;
+  top: 5vh;
 
 }
 
 h1 {
   left: 50%;
-  top: 0;
+  top: 12vh;
   text-align: center;
   font-family: 'Overpass Mono', monospace;
   font-weight: 600;
@@ -81,7 +82,7 @@ h1 {
 nav {
   position: fixed;
   width: 100%;
-  bottom: 0;
+  top: 15vh;
   color: lightgrey;
   font-family: 'Overpass Mono', monospace;
   font-size: 1rem;
@@ -117,7 +118,7 @@ section.projects {
   height: 75%;
   width: 100%;
   display: flex;
-  margin: auto;
+  margin-top: 25vh;
   align-items: center;
   align-content: center;
   display: flex;
@@ -125,7 +126,8 @@ section.projects {
   flex-direction: column;
   /* justify-content: center; */
   /* margin-top: 24vmin; */
-  padding-bottom: 24vmin;
+  padding-bottom: 31.5vmin;
+  padding-top: 9vh;
   z-index: 4;
 }
 
@@ -133,9 +135,6 @@ section.projects {
     95% { top: -100%; }
     100% { top:0; }
 } */
-section.projects {
-  padding-top: 24vmin;
-}
 
 .projects a:link {
   text-decoration: none;
