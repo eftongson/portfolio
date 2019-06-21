@@ -91,6 +91,7 @@ nav {
   mix-blend-mode: multiply;
   /* outline: 1px solid green; */
   line-height: 10vh;
+  text-decoration: underline;
 
 }
 
@@ -279,7 +280,7 @@ section#inspo {
 
   header {
     position: absolute;
-    top: 10vmin;
+    top: 7vmin;
     overflow:visible;
   }
 
@@ -307,6 +308,8 @@ section#inspo {
     position: relative;
     margin: auto;
     padding: 100px;
+    padding-top: 20vmin;
+    padding-bottom: 0;
     vertical-align: middle;
     justify-content: center;
     /* transform: skew(0deg, 0deg); */
@@ -339,8 +342,8 @@ section#inspo {
 
   nav {
     position: fixed;
-    width: 100%;
-    bottom: 10vmin;
+    width: 50%;
+    top: 20vmin;
     color: lightgrey;
     font-family: 'Overpass Mono', monospace;
     font-size: 1rem;
