@@ -60,7 +60,7 @@ a:hover{
 
 
 h2{
-  font-size: 2rem;
+  font-size: 2.65rem;
     text-decoration: none;
     color: black;
 }
@@ -71,12 +71,17 @@ li{
 }
 
 h3{
-  font-size: 1.4rem;
+  font-size: 2rem;
   color: black;
 }
 
+h4{
+  font-size: 2rem;
+  font-style: italic;
+}
+
 p{
-  font-size: .6rem;
+  font-size: 1rem;
 }
 
 section.content{
