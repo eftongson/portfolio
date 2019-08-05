@@ -192,6 +192,16 @@ section.projects {
   background-position: bottom;
 }
 
+#yswm {
+  /* background-color: lightgrey; */
+  background-image: url('cover-yswm.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+
+
 .projectBox:hover h2 {
   font-size: 2vmax;
   color: #FD5F00;
@@ -244,6 +254,14 @@ section#inspo {
   display: none;
 }
 
+
+#blog1{
+  background-color: blue;
+}
+
+#blog2{
+background-color: yellow;
+}
 /* FOR DESKTOP */
 @media (min-width: 769px) {
   body {

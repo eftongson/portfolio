@@ -18,6 +18,7 @@ body {
   margin: 0;
   padding: 1%;
   /* 1% padding for border */
+  overflow-x: scroll;
 }
 
 section.wrapper {
@@ -91,6 +92,7 @@ nav {
   mix-blend-mode: multiply;
   /* outline: 1px solid green; */
   line-height: 10vh;
+text-decoration: underline;
 
 }
 
@@ -114,17 +116,28 @@ h2 {
 
 
 /* ABOUT */
-section.about {
+section.headline {
   width: 96vw;
   height: 96vh;
   color: #555555;
   padding: 15%;
   font-family: "Overpass", sans-serif;
   font-weight: 100;
+  text-align: left;
+
+}
+
+.blogtitle{
+  text-align: center;
+}
+
+.textcontent{
+  display: block;
 }
 
 img#headshot {
   margin-top: 25%;
+
   /* align-self: start; */
 }
 
@@ -135,7 +148,8 @@ section#inspo {
 
 p{
   text-align: left;
-  font-size: 4vmax;
+  font-size: 4vmin;
+  color: darkgrey;
 }
 
 /* FOR DESKTOP */
@@ -143,14 +157,14 @@ p{
   body {
     /* background: linear-gradient(#2F302F, #EF4923); */
     text-align: center;
-    color: navy;
+    color: darkgrey;
     display: block;
     font-family: 'Overpass', sans-serif;
     font-weight: 300;
     margin: 0;
     padding: .5%;
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
   }
 
   section.wrapper {
@@ -161,6 +175,7 @@ p{
     display: flex;
     align-self: center;
     justify-content: center;
+ position: relative;
   }
 
   h1 {
@@ -178,23 +193,39 @@ p{
     overflow:visible;
   }
 
-  section.about{
+  section.headline{
     display: flex;
     flex-direction: row;
     width: 100%;
-    padding-top: 15%;
+    padding-top: 25%;
     padding-left: 5%;
     padding-right: 5%;
     align-items: center;
+    justify-content: center;
+    /* position: absolute; */
+  }
+
+  section.textcontent{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 5%;
+    margin-bottom: 15%;
+    padding-top: 25%;
   }
 
 img#headshot{
-  margin: 5%;
+  margin: 0;
+  margin-top: 5%;
 }
 
 p{
-  margin: 5%;
+    margin-left: 5%;
+    justify-content: center;
+    color: darkgrey;
 }
+
 
   /* LINK STYLING FOR H1 */
   a, h1 :before {
@@ -216,9 +247,9 @@ p{
 
 
   nav {
-    position: fixed;
-    width: 100%;
-    bottom: 10vmin;
+    position: absolute;
+    width: 50%;
+    top: 20vmin;
     color: lightgrey;
     font-family: 'Overpass Mono', monospace;
     font-size: 1rem;
@@ -227,6 +258,14 @@ p{
     mix-blend-mode: multiply;
     /* outline: 1px solid green; */
     line-height: 10vh;
+  }
+
+  iframe{
+    border: 0;
+width: 300px;
+height: 300px;
+
+
 
   }
 }
