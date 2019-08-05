@@ -1,0 +1,205 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(#2F302F, #EF4923);
+  text-align: center;
+  font-weight: 300;
+  font-family: 'Overpass', monospace;
+  color: black;
+  margin: 0;
+  padding: 1%;
+  /* 1% padding for border */
+}
+
+section.wrapper {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#FFFFFF, #FFF3ED);
+  margin: 0;
+  padding-bottom: 0;
+  overflow-x: scroll;
+}
+
+/* LINK STYLING FOR H1 */
+a, h1 :before {
+  color: black;
+}
+
+a, h1 :visited {
+  color: black;
+}
+
+a h1:hover {
+  color: #FD5F00;
+}
+
+a:hover {
+  color: #FD5F00;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  position: fixed;
+  /* padding: 10vmin; */
+  margin: auto;
+  /* outline: 1px solid blue; */
+  height: 12.5%;
+  line-height: 10vh;
+  z-index: 6;
+  top: 5vh;
+
+}
+
+section.bar{
+  position:relative;
+  bottom: 0;
+  height: 20%;
+  border-width: thin;
+  border-color: lightgrey;
+}
+
+h1 {
+  left: 50%;
+  top: 12vh;
+  text-align: center;
+  font-family: 'Overpass Mono', monospace;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #000000;
+  z-index: 6;
+  overflow: auto;
+  text-decoration: none;
+}
+
+/* VERTICAL NAVIGATION */
+nav {
+  position: fixed;
+  width: 100%;
+  top: 15vh;
+  color: lightgrey;
+  font-family: 'Overpass Mono', monospace;
+  font-size: 1rem;
+  font-weight: 600;
+  z-index: 5;
+  mix-blend-mode: multiply;
+  /* outline: 1px solid green; */
+  line-height: 10vh;
+
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-bottom: 0;
+}
+
+li {
+  list-style-type: none;
+  font-size: 1rem;
+  text-align: justify;
+}
+
+h2 {
+  font-size: 1rem;
+}
+
+p{
+  text-align: left;
+  font-size: .5rem;
+}
+
+/* FOR DESKTOP */
+@media (min-width: 769px) {
+  body {
+    /* background: linear-gradient(#2F302F, #EF4923); */
+    text-align: center;
+    color: navy;
+    display: block;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 300;
+    margin: 0;
+    padding: .5%;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  section.wrapper {
+    /* background: linear-gradient(#000000, #2F302F); */
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+  }
+
+  h1 {
+    font-size: 2vmax;
+    color: black;
+  }
+
+  h2 {
+    font-size: 1vmax;
+  }
+
+  header {
+    position: absolute;
+    top: 10vmin;
+    overflow:visible;
+  }
+
+p{
+  margin: 5%;
+}
+
+  /* LINK STYLING FOR H1 */
+  a, h1 :before {
+    color: black;
+  }
+
+  a, h1 :visited {
+    color: black;
+  }
+
+  a h1:hover {
+    color: #FD5F00;
+  }
+
+  a:hover {
+    color: #FD5F00;
+  }
+
+
+
+  nav {
+    position: fixed;
+    width: 100%;
+    bottom: 10vmin;
+    color: lightgrey;
+    font-family: 'Overpass Mono', monospace;
+    font-size: 1rem;
+    font-weight: 600;
+    z-index: 5;
+    mix-blend-mode: multiply;
+    /* outline: 1px solid green; */
+    line-height: 10vh;
+
+  }
+}
