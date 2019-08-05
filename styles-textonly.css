@@ -148,8 +148,9 @@ section#inspo {
 
 p{
   text-align: left;
-  font-size: 4vmin;
+  font-size: 3vmin;
   color: darkgrey;
+  font-family: 'Overpass Mono', monospace;
 }
 
 /* FOR DESKTOP */
@@ -180,10 +181,14 @@ p{
 
   h1 {
     font-size: 2vmax;
-    color: black;
+    color: #555555;
   }
 
   h2 {
+    font-size: 1vmax;
+  }
+
+  h3{
     font-size: 1vmax;
   }
 
@@ -215,15 +220,19 @@ p{
     padding-top: 25%;
   }
 
+  section.sidetext{
+    margin-left: 10%;
+  }
+
 img#headshot{
   margin: 0;
   margin-top: 5%;
 }
 
 p{
-    margin-left: 5%;
+    /* margin-left: 5%; */
     justify-content: center;
-    color: darkgrey;
+    color: #555555;
 }
 
 
