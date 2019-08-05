@@ -202,12 +202,21 @@ p{
     display: flex;
     flex-direction: row;
     width: 100%;
+    padding-top: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+    align-items: center;
+  }
+
+  section.about{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
     padding-top: 25%;
     padding-left: 5%;
     padding-right: 5%;
     align-items: center;
     justify-content: center;
-    /* position: absolute; */
   }
 
   section.textcontent{
@@ -227,6 +236,20 @@ p{
 img#headshot{
   margin: 0;
   margin-top: 5%;
+}
+
+section.imgbox{
+  display: inline-block;
+margin-top:10%;
+  margin-bottom: 15%;
+  top: 50vh;
+}
+
+img.imgcontent{
+  width: 500px;
+  display: inline-block;
+  position: relative;
+  image-orientation: from-image;
 }
 
 p{
@@ -273,8 +296,5 @@ p{
     border: 0;
 width: 300px;
 height: 300px;
-
-
-
   }
 }

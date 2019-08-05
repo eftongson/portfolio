@@ -192,6 +192,22 @@ section.projects {
   background-position: bottom;
 }
 
+#photog {
+  /* background-color: lightgrey; */
+  background-image: url('cover-photog.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+#prints {
+  /* background-color: lightgrey; */
+  background-image: url('cover-prints.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
 #yswm {
   /* background-color: lightgrey; */
   background-image: url('cover-yswm.jpg');
