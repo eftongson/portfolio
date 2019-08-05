@@ -167,26 +167,26 @@ section.projects {
   z-index: 2;
 }
 
-#deedaise {
+#td {
   /* background-color: gold; */
-  background-image: url('projects/deedaise/cover.jpg');
+  background-image: url('td/cover-td.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
 }
 
-#missionpermission {
+#mp {
   /* background: linear-gradient(#fffa00, #aa00ee); */
   /* background-color: grey; */
-  background-image: url('projects/missionpermission/cover.jpg');
+  background-image: url('mp/cover-mp.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
 }
 
-#inztangrat {
+#levis {
   /* background-color: lightgrey; */
-  background-image: url('projects/inztangrat/cover.jpeg');
+  background-image: url('levis/cover-levis.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
@@ -278,6 +278,11 @@ section#inspo {
 #blog2{
 background-color: yellow;
 }
+
+#blog3{
+background-color: red;
+}
+
 /* FOR DESKTOP */
 @media (min-width: 769px) {
   body {
