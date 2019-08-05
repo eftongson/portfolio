@@ -186,6 +186,10 @@ p {
     font-size: 1vmax;
   }
 
+  h4 {
+    font-size: 11px;
+  }
+
   header {
     position: absolute;
     top: 10vmin;
@@ -299,5 +303,13 @@ p {
     border: 0;
     width: 300px;
     height: 380px;
+  }
+
+  footer{
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    color: #ef4923;
+  font-family: 'Overpass Mono', monospace;
   }
 }

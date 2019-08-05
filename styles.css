@@ -192,6 +192,14 @@ section.projects {
   background-position: bottom;
 }
 
+#daniels {
+  /* background-color: lightgrey; */
+  background-image: url('daniels/cover-daniels.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
 #photog {
   /* background-color: lightgrey; */
   background-image: url('cover-photog.jpg');
@@ -391,6 +399,13 @@ background-color: red;
     mix-blend-mode: multiply;
     /* outline: 1px solid green; */
     line-height: 10vh;
+  }
 
+  footer{
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    color: #ef4923;
+  font-size: 9px;
   }
 }
