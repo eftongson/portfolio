@@ -26,7 +26,8 @@ section.wrapper {
   justify-content: center;
   width: 100%;
   height: 100%;
-  background: linear-gradient(#FFFFFF, #FFF3ED);
+  /* background: linear-gradient(#FFFFFF, #FFF3ED); */
+  background-color: #ffffff;
   margin: 0;
   padding-bottom: 0;
   overflow-x:hidden;
@@ -52,6 +53,17 @@ a:hover {
 a {
   text-decoration: none;
 }
+
+#redirectlogo {
+  /* height: 100%; */
+  /* width: 100%; */
+  margin: 0;
+  padding: 0;
+  /* display: block; */
+  position: relative;
+  top: 40%;
+}
+
 
 header {
   position: fixed;
@@ -111,6 +123,14 @@ li {
 
 h2 {
   font-size: 5vmin;
+}
+
+#redirect{
+  margin: 0;
+  padding: 0;
+  display: block;
+  position:fixed;
+  top: 50%;
 }
 
 /* PROJECTS */
